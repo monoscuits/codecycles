@@ -1,3 +1,19 @@
+/*
+    For this question, Breadth First Search or BFS is the best approach to traverse a binary tree level order wise.
+        Time Complexity : O(n)
+        Space Complexity : O(n)
+    
+    Explanation:
+        We are gonna use a queue which would track the tree nodes of a particular level. Right after initialization we are gonna
+        offer root node to the queue and initialize a while-loop under the condition that queue is not empty. As for the logic in 
+        the while-loop, we are gonna initialize a current node which would track the tree nodes so we can extract the value from 
+        the nodes meanwhile we check for existence of left and right of the current node and if they exist they are added to the queue.
+        These steps are repeated till the queue is empty which marks the complete traversal of the tree!
+
+*/
+
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
