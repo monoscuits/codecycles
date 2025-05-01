@@ -1,3 +1,16 @@
+/*
+    For this question, Breadth First Search or BFS is the best approach to traverse a binary tree level order wise.
+        Time Complexity : O(row * col)
+        Space Complexity : O(rpw * col)
+    
+    Explanation:
+        We are gonna traverse and check every box in the given grid, If the box has value '1' then we have to add it to the visited array, increment 
+        the number of islands and do a BFS till we cover the island area 
+
+*/
+
+
+
 class Solution {
     public int numIslands(char[][] grid) {
         int numOfIsland = 0;
