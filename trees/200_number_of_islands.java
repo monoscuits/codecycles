@@ -1,7 +1,7 @@
 /*
     For this question, Breadth First Search or BFS is the best approach to traverse a binary tree level order wise.
         Time Complexity : O(row * col)
-        Space Complexity : O(rpw * col)
+        Space Complexity : O(row * col)
     
     Explanation:
         We are gonna traverse and check every box in the given grid, If the box has value '1' then we have to add it to the visited array, increment 
@@ -21,14 +21,14 @@ class Solution {
             for(int j = 0 ; j < grid[0].length; j++){
                 if(grid[i][j] == '1' && !visited[i][j]){
                     numOfIsland++;
-                    bsf(i,j,grid,visited);
+                    bfs(i,j,grid,visited);
                 }
             }
         }
         return numOfIsland;
     }
 
-    public void bsf(int row, int col, char[][] grid, boolean[][] visited){
+    public void bfs(int row, int col, char[][] grid, boolean[][] visited){
 
         visited[row][col] = true;
 
