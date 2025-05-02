@@ -1,4 +1,14 @@
+/*
+        Approach:
+            Depth First Search is the right approach for this problem
+            Time Complexity : O(n)
+            Space Complexitty : O(n)
 
+        Explanation:
+            At every point, we find height of the left side and right side of a node and keep a score of max of ( left height + right height, diameter ) for
+            diameter. After traversing all the nodes, we return the diameter
+
+*/
 
 /**
  * Definition for a binary tree node.
