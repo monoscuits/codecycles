@@ -31,8 +31,7 @@ class Solution {
         if(root == null) return null;
 
         Deque<TreeNode> treeQueue = new LinkedList<>();
-        Deque<Integer> valQueue = new LinkedList<>();
-        treeQueue.offerLast(root); valQueue.offerLast(root.val);
+        treeQueue.offerLast(root); 
 
         boolean oddLvl = false;
         while(!treeQueue.isEmpty()){
