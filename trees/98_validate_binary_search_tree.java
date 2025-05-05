@@ -1,3 +1,18 @@
+/*
+
+    For this problem, Depth First Search or DFS is the best approach.
+        Time Complexity : O(n)
+        Space Complexity : O(n)
+
+    Explanation:
+        We have to establish a validator method that will intake a node, a minimum and maximum integer value that a node can have. For a BST to be valid,
+        elements in the left must be strictly lesser than the node and the elements in the right must be strictly greater than the node. At each node,
+        we call the function for its left and right node with adjusting the minimum and maximum paramter. If any node disobeys this logic, then the method
+        returns false.
+
+*/
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
