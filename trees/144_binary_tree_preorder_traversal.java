@@ -1,3 +1,19 @@
+/*
+    Approach:
+        Pre-Order Traversal as the problem suggests
+        
+    Time Complexity  : O(n)
+    Space Complexity : O(n)
+
+    Explanation:
+
+        We are using a stack to store the values as we do pre order traversal through iteration
+    
+
+*/
+
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
